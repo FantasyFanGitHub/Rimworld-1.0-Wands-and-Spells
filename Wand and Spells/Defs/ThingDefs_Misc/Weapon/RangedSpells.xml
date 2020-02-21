@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseWeapon" Name="WSSpellBase" Abstract="True">
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.2</Mass>
+      <Beauty>-3</Beauty>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <tradeability>Sellable</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WSSpellBase">
+    <defName>WSSpellDestruction</defName>
+    <label>Spell of destruction</label>
+    <description>An ancient spell. This spell bombards the target area with kinetic energy.</description>
+	<graphicData>
+      <texPath>Things/Item/SpellDestruction</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li><!--Items-->WSSpells</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <verbClass>Verb_Bombardment</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="WSSpellBase">
+    <defName>WSSpellEnergy</defName>
+    <label>Spell of energy</label>
+    <description>An ancient spell. This spell beams power down in a massive column of energy and turns the area into a thousand-degree inferno.</description>
+	<graphicData>
+      <texPath>Things/Item/SpellEnergy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li><!--Items-->WSSpells</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <verbClass>Verb_PowerBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>15</ai_AvoidFriendlyFireRadius>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="WSSpellBase">
+    <defName>WSSpellWind</defName>
+    <label>Spell of wind</label>
+    <description>An ancient spell. This spell is capable of causing a massive air current disturbance, which will generate a tornado at a chosen location.</description>
+	<graphicData>
+      <texPath>Things/Item/SpellWind</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li><!--Items-->WSSpells</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Spawn</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <spawnDef>Tornado</spawnDef>
+        <colonyWideTaleDef>TornadoFromItem</colonyWideTaleDef>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Unfinished-Wand-Spell -->
+
+  <UnfinishedWand.label>未完成的法杖</UnfinishedWand.label>
+  <UnfinishedSpell.label>未完成的咒語</UnfinishedSpell.label>
+
+
+  <!-- Ingredients -->
+
+  <ElysiumWood.label>極樂木</ElysiumWood.label>
+  <ElysiumWood.description>來自極樂樹的木頭，能用於建造建築物和武器，也是製造法杖的好材料。</ElysiumWood.description>
+  <ElysiumWood.tools.0.label>原木</ElysiumWood.tools.0.label>
+  <ElysiumWood.stuffProps.stuffAdjective>極樂木</ElysiumWood.stuffProps.stuffAdjective>
+
+  <ComponentElysium.label>極樂零部件</ComponentElysium.label>
+  <ComponentElysium.description>這是一種用來製造法杖的材料。</ComponentElysium.description>
+
+  <ThrumboHeartString.label>獨角獸心臟</ThrumboHeartString.label>
+  <ThrumboHeartString.description>一顆獨角獸心臟，是製作高級的法杖的材料之一。</ThrumboHeartString.description>
+
+  <SilverPowder.label>銀色粉末</SilverPowder.label>
+  <SilverPowder.description>這種粉末是主要用來製作高級法杖和製造銀墨水的原料。</SilverPowder.description>
+
+  <SilverInk.label>銀色墨水</SilverInk.label>
+  <SilverInk.description>用於書寫神奇、強大的咒語。</SilverInk.description>
+
+  <MysteriousPaper.label>秘法紙</MysteriousPaper.label>
+  <MysteriousPaper.description>神秘紙與銀墨水一起使用，可以書寫神奇且強大的咒語。</MysteriousPaper.description>
+
+  <WSSoot.label>木灰</WSSoot.label>
+  <WSSoot.description>是製造銀色墨水的原料之一。</WSSoot.description>
+
+  <SpellPapyrus.label>魔法紙草</SpellPapyrus.label>
+  <SpellPapyrus.description>用來製作秘法紙的材料。</SpellPapyrus.description>
+
+  <GumArabic.label>阿拉伯樹膠</GumArabic.label>
+  <GumArabic.description>用於製作銀色墨水的阿拉伯樹膠。</GumArabic.description>
+
+
+</LanguageData>

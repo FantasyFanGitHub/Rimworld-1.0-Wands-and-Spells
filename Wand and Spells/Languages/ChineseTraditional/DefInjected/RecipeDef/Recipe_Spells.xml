@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSSpellWindMaking.label>書寫暴風咒語卷軸</WSSpellWindMaking.label>
+  <WSSpellWindMaking.description>書寫暴風咒語卷軸。</WSSpellWindMaking.description>
+  <WSSpellWindMaking.jobString>書寫中。</WSSpellWindMaking.jobString>
+
+  <WSSpellDestructionMaking.label>書寫毀滅咒語</WSSpellDestructionMaking.label>
+  <WSSpellDestructionMaking.description>書寫毀滅咒語卷軸。</WSSpellDestructionMaking.description>
+  <WSSpellDestructionMaking.jobString>書寫中。</WSSpellDestructionMaking.jobString>
+
+  <WSSpellEnergyMaking.label>書寫能量咒語卷軸</WSSpellEnergyMaking.label>
+  <WSSpellEnergyMaking.description>書寫能量咒語卷軸。</WSSpellEnergyMaking.description>
+  <WSSpellEnergyMaking.jobString>書寫中。</WSSpellEnergyMaking.jobString>
+
+
+</LanguageData>

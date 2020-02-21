@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DoBillsWSWands.label>在法杖工作台上制作法杖</DoBillsWSWands.label>
+  <DoBillsWSWands.verb>制作</DoBillsWSWands.verb>
+  <DoBillsWSWands.gerund>制作</DoBillsWSWands.gerund>
+
+  <DoBillsWSSpells.label>在咒语书写桌写咒语法术</DoBillsWSSpells.label>
+  <DoBillsWSSpells.verb>书写</DoBillsWSSpells.verb>
+  <DoBillsWSSpells.gerund>书写</DoBillsWSSpells.gerund>
+
+
+</LanguageData>

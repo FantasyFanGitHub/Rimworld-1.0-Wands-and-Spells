@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSSootMaking.label>收集木灰</WSSootMaking.label>
+  <WSSootMaking.description>收集木灰。</WSSootMaking.description>
+  <WSSootMaking.jobString>正在收集木灰。</WSSootMaking.jobString>
+
+  <WSSilverPowderMaking.label>磨製銀色粉末</WSSilverPowderMaking.label>
+  <WSSilverPowderMaking.description>磨製銀色粉末。</WSSilverPowderMaking.description>
+  <WSSilverPowderMaking.jobString>正在磨製銀色粉末。</WSSilverPowderMaking.jobString>
+
+  <WSComponentElysiumMaking.label>生產極樂零部件</WSComponentElysiumMaking.label>
+  <WSComponentElysiumMaking.description>生產極樂零部件。</WSComponentElysiumMaking.description>
+  <WSComponentElysiumMaking.jobString>正在生產極樂零部件。</WSComponentElysiumMaking.jobString>
+
+  <ThrumboHeartExtracting.label>收割獨角獸心臟</ThrumboHeartExtracting.label>
+  <ThrumboHeartExtracting.description>收割獨角獸心臟。</ThrumboHeartExtracting.description>
+  <ThrumboHeartExtracting.jobString>正在收割獨角獸心臟。</ThrumboHeartExtracting.jobString>
+
+  <WSInkMaking.label>製作銀色墨水</WSInkMaking.label>
+  <WSInkMaking.description>製作銀色墨水。</WSInkMaking.description>
+  <WSInkMaking.jobString>正在製作銀色墨水。</WSInkMaking.jobString>
+
+  <WSPaperMaking.label>製作秘法紙</WSPaperMaking.label>
+  <WSPaperMaking.description>製作秘法紙。</WSPaperMaking.description>
+  <WSPaperMaking.jobString>正在製作秘法紙。</WSPaperMaking.jobString>
+
+
+</LanguageData>

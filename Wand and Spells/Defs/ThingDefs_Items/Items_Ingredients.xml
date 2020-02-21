@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Defs>
+
+<!--Unfinished-Wand-Spell-->
+<ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedWand</defName>
+    <label>unfinished wand</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedSpell</defName>
+    <label>unfinished spell</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+  </ThingDef>
+  
+<!--=====================Ingredients=================-->
+
+<ThingDef ParentName="ResourceVerbBase">
+    <defName>ElysiumWood</defName>
+    <label>elysium wood</label>
+    <description>Wood from the elysium tree. Useful for building structures and weapons. It is a good material for wands.</description>
+    <graphicData>
+      <texPath>Things/Item/ElysiumWood</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass> 
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(105,59,50)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <isTechHediff>true</isTechHediff>
+    <thingCategories>
+      <li>WSIngredients</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <tools>
+      <li>
+        <label>log</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>ComponentElysium</defName>
+    <label>elysium component</label>
+    <description>It is a material used for wands.</description>
+    <graphicData>
+      <texPath>Things/Item/ComponentElysium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>32</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ThrumboHeartString</defName>
+    <label>Thrumbo heart</label>
+    <description>A heart from a thrumbo used for making advanced wands.</description>
+    <graphicData>
+      <texPath>Things/Item/ThrumboHeart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>32</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>SilverPowder</defName>
+    <label>silver powder</label>
+    <description>This metal is mostly used as an ingredient for advanced wand making and creating silver ink.</description>
+    <graphicData>
+      <texPath>Things/Item/SilverPowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>500</stackLimit>
+    <smallVolume>true</smallVolume>
+    <statBases>
+      <MaxHitPoints>0.2</MaxHitPoints>
+      <MarketValue>0.1</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.2</Flammability>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+
+<ThingDef ParentName="ResourceBase">
+    <defName>SilverInk</defName>
+    <label>silver ink</label>
+    <description>Silver ink is used for writing magical and powerfull spells.</description>
+    <graphicData>
+      <texPath>Things/Item/SilverInk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>MysteriousPaper</defName>
+    <label>mysterious paper</label>
+    <description>Mysterious paper is used with silver ink for writing magical and powerfull spells.</description>
+    <graphicData>
+      <texPath>Things/Item/MysteriousPaper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>1.0</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>WSSoot</defName>
+    <label>soot</label>
+    <description>Soot is used for making silver ink.</description>
+    <graphicData>
+      <texPath>Things/Item/WSSoot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>0.09</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>SpellPapyrus</defName>
+    <label>spell papyrus</label>
+    <description>Spell papyrus is used for making mysterious paper.</description>
+    <graphicData>
+      <texPath>Things/Item/SpellPapyrus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li><!--PlantMatter-->WSIngredients</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>GumArabic</defName>
+    <label>gum arabic</label>
+    <description>gum arabic is used for making silver ink.</description>
+    <graphicData>
+      <texPath>Things/Item/GumArabic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>0.09</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.5</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li><!--Manufactured-->WSIngredients</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Wand of Destruction - Tier II -->
+
+  <WSWandDestructionII.label>二阶毁灭法杖</WSWandDestructionII.label>
+  <WSWandDestructionII.description>这根法杖会令目标区域发生猛烈爆炸，但巨大的能量输出也会导致法杖损坏。</WSWandDestructionII.description>
+  <WSWandDestructionII.tools.0.label>杖身</WSWandDestructionII.tools.0.label>
+
+  <Proj_WandDestructII.label>能量</Proj_WandDestructII.label>
+
+  <!-- Wand of Destruction - Tier I + Wand of Electromagnetism -->
+
+  <WSWandDestruction.label>一阶毁灭法杖</WSWandDestruction.label>
+  <WSWandDestruction.description>射程较短的法杖，能量弹着陆时会发生爆炸，为附近的所有物件和生物带来一定伤害。</WSWandDestruction.description>
+  <WSWandDestruction.verbs.0.label>使用法杖</WSWandDestruction.verbs.0.label>
+
+  <Proj_WandDestruct.label>能量</Proj_WandDestruct.label>
+    
+  <WSWandEMP.label>EMP法杖</WSWandEMP.label>
+  <WSWandEMP.description>这根EMP法杖能够对电子设备造成损坏。</WSWandEMP.description>
+  <WSWandEMP.verbs.0.label>使用法杖</WSWandEMP.verbs.0.label>
+
+  <Proj_WandEMP.label>能量</Proj_WandEMP.label>
+
+  <WSWandDamageII.label>二阶魔力法杖</WSWandDamageII.label>
+  <WSWandDamageII.description>一根适合用来狩猎动物的法杖。</WSWandDamageII.description>
+  <WSWandDamageII.tools.0.label>杖柄</WSWandDamageII.tools.0.label>
+  <WSWandDamageII.tools.1.label>杖身</WSWandDamageII.tools.1.label>
+
+  <Proj_WandDamageII.label>能量</Proj_WandDamageII.label>
+
+  <WSWandFire.label>炎爆法杖</WSWandFire.label>
+  <WSWandFire.description>一根火焰法杖。能量在撞击时会引起小型的火焰爆炸。</WSWandFire.description>
+  <WSWandFire.tools.0.label>杖柄</WSWandFire.tools.0.label>
+  <WSWandFire.tools.1.label>杖身</WSWandFire.tools.1.label>
+
+  <Proj_WandFire.label>能量</Proj_WandFire.label>
+
+  <WSWandDamage.label>一阶魔力法杖</WSWandDamage.label>
+  <WSWandDamage.description>这根法杖造成的伤害并不会很高，但它的射程较广，且施展速度较快。</WSWandDamage.description>
+  <WSWandDamage.tools.0.label>杖柄</WSWandDamage.tools.0.label>
+  <WSWandDamage.tools.1.label>杖身</WSWandDamage.tools.1.label>
+
+  <Proj_WandDamageI.label>能量</Proj_WandDamageI.label>
+
+
+</LanguageData>

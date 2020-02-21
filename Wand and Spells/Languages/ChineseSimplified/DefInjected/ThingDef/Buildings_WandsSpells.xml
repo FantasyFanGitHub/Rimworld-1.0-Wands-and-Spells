@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSWandMaker.label>法杖工作台</WSWandMaker.label>
+  <WSWandMaker.description>制造法杖的工作台。</WSWandMaker.description>
+  <WSWandMaker_Blueprint.label>法杖工作台 (蓝图)</WSWandMaker_Blueprint.label>
+  <WSWandMaker_Blueprint_Install.label>法杖工作台 (蓝图)</WSWandMaker_Blueprint_Install.label>
+  <WSWandMaker_Frame.label>法杖工作台 (建造中)</WSWandMaker_Frame.label>
+  <WSWandMaker_Frame.description>制造法杖的工作台。</WSWandMaker_Frame.description>
+
+  <WSSpellWriter.label>咒语书写桌</WSSpellWriter.label>
+  <WSSpellWriter.description>一个用于书写魔法咒语，制造银色墨水和神秘纸张的工作台。</WSSpellWriter.description>
+  <WSSpellWriter_Blueprint.label>咒语书写桌 (蓝图)</WSSpellWriter_Blueprint.label>
+  <WSSpellWriter_Blueprint_Install.label>咒语书写桌 (蓝图)</WSSpellWriter_Blueprint_Install.label>
+  <WSSpellWriter_Frame.label>咒语书写桌 (建造中)</WSSpellWriter_Frame.label>
+  <WSSpellWriter_Frame.description>一个用于书写魔法咒语，制造银色墨水和神秘纸张的工作台。</WSSpellWriter_Frame.description>
+
+
+</LanguageData>

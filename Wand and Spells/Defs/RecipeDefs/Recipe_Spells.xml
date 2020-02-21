@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<RecipeDef Name="SpellJobString" Abstract="True">
+	<jobString>Writing {0}.</jobString>
+	<unfinishedThingDef>UnfinishedSpell</unfinishedThingDef>
+     <effectWorking>Sculpt</effectWorking>
+     <soundWorking>Recipe_Sculpt</soundWorking>
+</RecipeDef>
+
+
+<RecipeDef ParentName="SpellJobString">
+    <defName>WSSpellWindMaking</defName>
+    <label>make spell of wind</label>
+    <description>Make spell of wind.</description>
+    <jobString>Writing.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MysteriousPaper</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SilverInk</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+    </ingredients>
+    <products>
+      <WSSpellWind>1</WSSpellWind>
+    </products>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+	</skillRequirements>
+	<researchPrerequisite>WSWind</researchPrerequisite>
+    <recipeUsers>
+        <li>WSSpellWriter</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SpellJobString">
+    <defName>WSSpellDestructionMaking</defName>
+    <label>make spell of destruction</label>
+    <description>Make spell of destruction.</description>
+    <jobString>Writing.</jobString>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MysteriousPaper</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SilverInk</li>
+          </thingDefs>
+        </filter>
+        <count>320</count>
+      </li>
+    </ingredients>
+    <products>
+      <WSSpellDestruction>1</WSSpellDestruction>
+    </products>
+	<skillRequirements>
+		<Cooking>15</Cooking>
+	</skillRequirements>
+	<researchPrerequisite>WSDestruction</researchPrerequisite>
+    <recipeUsers>
+        <li>WSSpellWriter</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SpellJobString">
+    <defName>WSSpellEnergyMaking</defName>
+    <label>make spell of energy</label>
+    <description>Make spell of energy.</description>
+    <jobString>Writing.</jobString>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MysteriousPaper</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SilverInk</li>
+          </thingDefs>
+        </filter>
+        <count>320</count>
+      </li>
+    </ingredients>
+    <products>
+      <WSSpellEnergy>1</WSSpellEnergy>
+    </products>
+	<skillRequirements>
+		<Cooking>15</Cooking>
+	</skillRequirements>
+	<researchPrerequisite>WSEnergy</researchPrerequisite>
+    <recipeUsers>
+        <li>WSSpellWriter</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

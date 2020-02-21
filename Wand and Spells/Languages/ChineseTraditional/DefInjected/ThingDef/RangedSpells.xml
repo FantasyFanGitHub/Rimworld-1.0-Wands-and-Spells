@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSSpellDestruction.label>毀滅咒語卷軸</WSSpellDestruction.label>
+  <WSSpellDestruction.description>一個古老的咒語。這個咒語會對目標區域進行多次猛烈轟炸。</WSSpellDestruction.description>
+
+  <WSSpellEnergy.label>能量法術卷軸</WSSpellEnergy.label>
+  <WSSpellEnergy.description>一個古老的咒語。這個咒語會將巨大的能量以的能量束輸送下去，使目標區域變成千度高溫的煉獄。</WSSpellEnergy.description>
+
+  <WSSpellWind.label>暴風咒語卷軸</WSSpellWind.label>
+  <WSSpellWind.description>一個古老的咒語。此咒語能夠引起巨大的氣流擾動，從而在選定位置上生成龍捲風。</WSSpellWind.description>
+
+
+</LanguageData>

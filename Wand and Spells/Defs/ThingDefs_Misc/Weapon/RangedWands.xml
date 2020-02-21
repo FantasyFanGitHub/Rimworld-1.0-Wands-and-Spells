@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+
+<!--Wand of Destruction - Tier II-->
+<ThingDef ParentName="BaseMakeableWand1">
+    <defName>WSWandDestructionII</defName>
+    <label>Wand of destruction - Tier II</label>
+    <description>This wand will lead to an extreme explosion in the targeted area, but the large energy output will lead to the destruction of the wand.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/WandDestructionII</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>8</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+    </thingSetMakerTags>
+	<costList>
+      <ElysiumWood>200</ElysiumWood>
+      <ComponentElysium>20</ComponentElysium>
+	  <SilverPowder>20</SilverPowder>
+	  <ThrumboHeartString>1</ThrumboHeartString>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_WandDestructII</defaultProjectile>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>7.8</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	<recipeMaker>
+		<skillRequirements>
+        	<Crafting>14</Crafting>
+     	 </skillRequirements>
+		<researchPrerequisite>WSWandDestruction</researchPrerequisite>
+	</recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_WandDestructII</defName>
+    <label>Energy</label>
+    <graphicData>
+      <texPath>Things/Projectile/Energy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_DoomsdayRocket</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>7.8</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--Wand of Destruction - Tier I + Wand of Electromagnetism-->
+
+<ThingDef Name="BaseWand1Projectile" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>12</speed>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Name="BaseMakeableWand1" ParentName="BaseWeapon" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>UnfinishedWand</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>WSWandMaker</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories>
+      <li>WSWands</li>
+    </thingCategories>
+	<techLevel>Medieval</techLevel>
+  </ThingDef>
+  
+	<ThingDef ParentName="BaseMakeableWand1">
+		<defName>WSWandDestruction</defName>
+		<label>Wand of destruction - Tier I</label>
+		<description>A short distance wand, when they land they'll explode, damaging anything and anyone nearby.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/WandDestructionI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <ElysiumWood>100</ElysiumWood>
+    </costList>
+		<verbs>
+			<li>
+				<label>use wand</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>Shot_Revolver</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_WandDestruct</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	<recipeMaker>
+		<researchPrerequisite>WSWandmaking</researchPrerequisite>
+	</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWand1Projectile">
+		<defName>Proj_WandDestruct</defName>
+		<label>Energy</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Energy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMakeableWand1">
+    <defName>WSWandEMP</defName>
+    <label>Wand of electromagnetism</label>
+    <description>Electromagnetic wand damaging to electronic equipment.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/WandEMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <ElysiumWood>20</ElysiumWood>
+      <ComponentElysium>6</ComponentElysium>
+    </costList>
+    <verbs>
+      <li>
+        <label>use wand</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+		<soundCast>Shot_Revolver</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_WandEMP</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	<recipeMaker>
+		<researchPrerequisite>WSEMP</researchPrerequisite>
+	</recipeMaker>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWand1Projectile">
+		<defName>Proj_WandEMP</defName>
+		<label>Energy</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Energy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+  
+<ThingDef ParentName="BaseMakeableWand1">
+    <defName>WSWandDamageII</defName>
+    <label>Wand of damage - Tier II</label>
+    <description>A better wand and good for Hunting animals.</description>
+    <graphicData>
+      <texPath>Things/Item/WandDamgeII</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ElysiumWood>60</ElysiumWood>
+      <ComponentElysium>3</ComponentElysium>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>WSAdvancedWands</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_WandDamageII</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_WandDamageII</defName>
+    <label>Energy</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Energy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMakeableWand1">
+		<defName>WSWandFire</defName>
+		<label>Wand of fire</label>
+    <description>A wand of fire. The energy creats small fire explosions on impact.</description>
+		<graphicData>
+			<texPath>Things/Item/WandFire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3.4</Mass>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<ElysiumWood>75</ElysiumWood>
+			<ComponentElysium>4</ComponentElysium>
+		</costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>WSFire</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Proj_WandFire</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>23.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_Revolver</soundCast>
+        		<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_WandFire</defName>
+    <label>Energy</label>
+    <graphicData>
+      <texPath>Things/Projectile/Energy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Flame</damageDef>
+      <explosionRadius>1.1</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseMakeableWand1">
+    <defName>WSWandDamage</defName>
+    <label>Wand of damage - Tier I</label>
+    <description>Wand of Damage is not very powerful, but has a decent range for a wand and is quick on the draw.</description>
+    <graphicData>
+      <texPath>Things/Item/WandDamage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ElysiumWood>30</ElysiumWood>
+      <ComponentElysium>2</ComponentElysium>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>WSWandmaking</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_WandDamageI</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_WandDamageI</defName>
+    <label>Energy</label>
+    <graphicData>
+      <texPath>Things/Projectile/Energy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+
+
+</Defs>

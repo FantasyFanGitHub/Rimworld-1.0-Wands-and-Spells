@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<WorkGiverDef>
+    <defName>DoBillsWSWands</defName>
+    <label>make wands at wand wood working table</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>85</priorityInType>
+    <fixedBillGiverDefs>
+      <li>WSWandMaker</li>
+    </fixedBillGiverDefs>
+    <verb>make</verb>
+    <gerund>making at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>DoBillsWSSpells</defName>
+    <label>write spells at spell writing table</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>86</priorityInType>
+    <fixedBillGiverDefs>
+      <li>WSSpellWriter</li>
+    </fixedBillGiverDefs>
+    <verb>write</verb>
+    <gerund>writing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</Defs>

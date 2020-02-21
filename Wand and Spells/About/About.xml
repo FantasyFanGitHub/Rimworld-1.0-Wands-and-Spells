@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[1.0] Wands and Spells</name>
+	<author>FantasyFan</author>
+	<targetVersion>1.0.2059</targetVersion>
+	<description>
+Have you ever wanted to be a wizard and craft different wands and spells. Now you can.
+
+This mod adds six different wands:
+-Wand of Damage - Tier I (like revolver)
+-Wand of Damage - Tier II (like bolt-action rifle)
+-Wand of Destruction - Tier I (like frag granades)
+-Wand of Destruction - Tier II (like Doomsday Rocked Launcher-Single Use)
+-Wand of Fire (like incendiary launcher)
+-Wand of Electromagnetism (like EMP granades-Industrial)
+
+This mod adds three spells:
+-Spell of Energy (like Orbital Power Beam)
+-Spell of Wind (like Tornado Generator)
+-Spell of Destruction (like Orbital Bombardement Targeter)
+
+Two new workbenches:
+-Wand wood working table (to craft wands and wand components)
+-Spell writing table (to write spells and craft silver ink)
+
+Ten research projects
+
+One two plants:
+-Elysium Tree (Get the wood used for crafting wands)
+-Spell Papyrus (Get the papyrus to make mysterious paper to write spells)
+
+
+Can be safely added to existing saves.
+
+
+If you find things unbalanced, please make suggestions for improvement.
+	</description>
+</ModMetaData>

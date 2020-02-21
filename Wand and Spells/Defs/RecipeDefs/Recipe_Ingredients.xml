@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<RecipeDef>
+    <defName>WSSootMaking</defName>
+    <label>make soot from wood logs</label>
+    <description>Make wood logs into soot used for silver ink making.</description>
+    <jobString>Making wood logs into soot.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+				<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+    </ingredients>
+    <products>
+      <WSSoot>20</WSSoot>
+    </products>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>WSSpellWriting</researchPrerequisite>
+    <recipeUsers>
+		<li>Campfire</li>
+        <li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>WSSilverPowderMaking</defName>
+    <label>make silver powder from silver</label>
+    <description>Make silver into silver powder used for silver ink making and advanced wand making.</description>
+    <jobString>Making silver into silver powder.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+				<filter>
+				<thingDefs>
+					<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+    </ingredients>
+    <products>
+      <SilverPowder>50</SilverPowder>
+    </products>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>WSSimpleMagic</researchPrerequisite>
+    <recipeUsers>
+		<li>TableStonecutter</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>WSComponentElysiumMaking</defName>
+    <label>make elysium component from elysium wood</label>
+    <description>Make elysium wood into elysium component used for wand making.</description>
+    <jobString>Making elysium wood into elysium component.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+				<filter>
+				<thingDefs>
+					<li>ElysiumWood</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+    </ingredients>
+    <products>
+      <ComponentElysium>1</ComponentElysium>
+    </products>
+	<skillRequirements>
+		<Crafting>7</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>WSWandmaking</researchPrerequisite>
+    <recipeUsers>
+		<li>WSWandMaker</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>ThrumboHeartExtracting</defName>
+    <label>extract the heart from a thrumbo</label>
+    <description>Extract the heart from a thrumbo used for advanced wand making.</description>
+    <jobString>Extracting heart.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Thrumbo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ThrumboHeartString>1</ThrumboHeartString>
+    </products>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+	</skillRequirements>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Thrumbo</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WSAdvancedWands</researchPrerequisite>
+    <recipeUsers>
+        <li>TableButcher</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>WSInkMaking</defName>
+    <label>make silver ink</label>
+    <description>Make silver ink used for spell writing.</description>
+    <jobString>Making silver ink.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+    	<li>
+			<filter>
+				<thingDefs>
+					<li>WSSoot</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>SilverPowder</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>GumArabic</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+    </ingredients>
+    <products>
+      <SilverInk>3</SilverInk>
+    </products>
+	<skillRequirements>
+		<Crafting>10</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>WSSpellWriting</researchPrerequisite>
+    <recipeUsers>
+		<li>WSSpellWriter</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>WSPaperMaking</defName>
+    <label>make mysterious paper</label>
+    <description>Make spell papyrus into mysterious paper used for spell writing.</description>
+    <jobString>Making spell papyrus into mysterious paper.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+    	<li>
+			<filter>
+				<thingDefs>
+					<li>SpellPapyrus</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+    </ingredients>
+    <products>
+      <MysteriousPaper>2</MysteriousPaper>
+    </products>
+	<skillRequirements>
+		<Crafting>6</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>WSSpellWriting</researchPrerequisite>
+    <recipeUsers>
+		<li>WSSpellWriter</li>
+    </recipeUsers>
+  </RecipeDef>
+
+
+</Defs>

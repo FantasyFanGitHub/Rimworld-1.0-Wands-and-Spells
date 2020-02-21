@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ResearchProjectDef>
+    <defName>WSSimpleMagic</defName>
+    <label>Simple magic</label>
+    <description>Craft silverpowder at the stonecutting table.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+	  <li>Stonecutting</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+</ResearchProjectDef>
+
+
+<!--Wands-->
+<ResearchProjectDef>
+    <defName>WSWandmaking</defName>
+    <label>Simple wand making</label>
+    <description>Craft the Wand of Damage and Destruction - Tier I. Sow the Elysium tree.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSSimpleMagic</li>
+	  <li>TreeSowing</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0.75</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSFire</defName>
+    <label>Wand of Fire</label>
+    <description>Craft the Wand of Fire.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSWandmaking</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0.75</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSEMP</defName>
+    <label>Wand of Electromagnetism</label>
+    <description>Craft the Wand of Electromagnetism.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+      <li>WSWandmaking</li>
+	  <li>Electricity</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.5</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSAdvancedWands</defName>
+    <label>Advanced wand making</label>
+    <description>Craft the Wand of Damage - Tier II. Extract a heart string from a thrumbo at the bucher table.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSWandmaking</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.25</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSWandDestruction</defName>
+    <label>Wand of Destruction</label>
+    <description>Craft the Wand of Destruction - Tier II.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSAdvancedWands</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2.25</researchViewY>
+</ResearchProjectDef>
+
+<!--Spells-->
+<ResearchProjectDef>
+    <defName>WSSpellWriting</defName>
+    <label>Simple spell writing</label>
+    <description>Sow Spell papyrus and acacia to make mysterious paper and gum arabic at the spell writing table. Create soot at the campfire.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSSimpleMagic</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0.75</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSWind</defName>
+    <label>Spell of wind</label>
+    <description>Write the Spell of wind.</description>
+    <baseCost>2700</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSSpellWriting</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0.75</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSEnergy</defName>
+    <label>Spell of energy</label>
+    <description>Write the Spell of energy.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSWind</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1.5</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef>
+    <defName>WSDestruction</defName>
+    <label>Spell of destruction</label>
+    <description>Write the Spell of destruction.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>WSEnergy</li>
+    </prerequisites>
+	<tab>WandSpell</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.25</researchViewY>
+</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSSimpleMagic.label>WS：銀色粉末</WSSimpleMagic.label>
+  <WSSimpleMagic.description>允許在岩石切割台上磨製銀色粉末。</WSSimpleMagic.description>
+
+
+  <!-- Wands -->
+
+  <WSWandmaking.label>WS：一階法杖</WSWandmaking.label>
+  <WSWandmaking.description>允許製作一階法力法杖與一階毀滅法杖。解鎖農作物：極樂樹。</WSWandmaking.description>
+
+  <WSFire.label>WS：炎爆法杖</WSFire.label>
+  <WSFire.description>允許製作二階炎爆法杖。</WSFire.description>
+
+  <WSEMP.label>WS：EMP法杖</WSEMP.label>
+  <WSEMP.description>允許製作二階EMP法杖。</WSEMP.description>
+
+  <WSAdvancedWands.label>WS：二階魔力法杖</WSAdvancedWands.label>
+  <WSAdvancedWands.description>允許製作二階魔力法杖和在屠宰桌上收割獨角獸心臟。</WSAdvancedWands.description>
+
+  <WSWandDestruction.label>WS：毀滅法杖</WSWandDestruction.label>
+  <WSWandDestruction.description>允許製作二階毀滅法杖。</WSWandDestruction.description>
+
+
+  <!-- Spells -->
+
+  <WSSpellWriting.label>WS：魔法素材</WSSpellWriting.label>
+  <WSSpellWriting.description>解鎖農作物：魔法紙草和相思樹。\n\n允許在咒語書寫桌上製作秘法紙和銀色墨水。\n\n允許在篝火上收集木灰。</WSSpellWriting.description>
+
+  <WSWind.label>WS：暴風咒語</WSWind.label>
+  <WSWind.description>學習書寫暴風咒語。</WSWind.description>
+
+  <WSEnergy.label>WS：能量咒語</WSEnergy.label>
+  <WSEnergy.description>學習書寫能量咒語。</WSEnergy.description>
+
+  <WSDestruction.label>WS：毀滅咒語</WSDestruction.label>
+  <WSDestruction.description>學習書寫毀滅咒語。</WSDestruction.description>
+
+
+</LanguageData>

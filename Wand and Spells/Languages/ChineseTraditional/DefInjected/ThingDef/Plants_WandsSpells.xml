@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ElysiumTreePlant.label>極樂樹</ElysiumTreePlant.label>
+  <ElysiumTreePlant.description>一棵神奇的樹，它的木材可以用來製作前往極樂世界的法杖。</ElysiumTreePlant.description>
+
+  <WSAcaciaTreePlant.label>相思樹</WSAcaciaTreePlant.label>
+  <WSAcaciaTreePlant.description>一棵簡樸的樹。能生產出用於製造銀色墨水的阿拉伯樹膠。</WSAcaciaTreePlant.description>
+
+  <SpellPapyrusPlant.label>魔法紙草</SpellPapyrusPlant.label>
+  <SpellPapyrusPlant.description>一種來自早已被世人遺忘的遠古世界的神奇植物。播種和收割魔法紙草都是屬於勞動密集類型的工作，原因是因為它的嫩芽很細。我們可以利用它製造神秘的紙張。</SpellPapyrusPlant.description>
+
+
+</LanguageData>
+

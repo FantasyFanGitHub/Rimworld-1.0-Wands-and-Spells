@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>WSSpellsWands</defName>
+    <label>wands and spells</label>
+    <parent>Manufactured</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>WSSpells</defName>
+    <label>spells</label>
+    <parent>WSSpellsWands</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>WSIngredients</defName>
+    <label>ingredients</label>
+    <parent>WSSpellsWands</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>WSWands</defName>
+    <label>wands</label>
+    <parent>WSSpellsWands</parent>
+  </ThingCategoryDef>
+  
+</Defs>

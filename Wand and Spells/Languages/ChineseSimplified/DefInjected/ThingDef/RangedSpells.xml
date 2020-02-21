@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WSSpellDestruction.label>毁灭咒语卷轴</WSSpellDestruction.label>
+  <WSSpellDestruction.description>一个古老的咒语。这个咒语会对目标区域进行多次猛烈轰炸。</WSSpellDestruction.description>
+
+  <WSSpellEnergy.label>能量法术卷轴</WSSpellEnergy.label>
+  <WSSpellEnergy.description>一个古老的咒语。这个咒语会将巨大的能量以的能量束输送下去，使目标区域变成千度高温的炼狱。</WSSpellEnergy.description>
+
+  <WSSpellWind.label>暴风咒语卷轴</WSSpellWind.label>
+  <WSSpellWind.description>一个古老的咒语。此咒语能够引起巨大的气流扰动，从而在选定位置上生成龙卷风。</WSSpellWind.description>
+
+
+</LanguageData>
